@@ -5,3 +5,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:8081/eureka/
     register-with-eureka: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
