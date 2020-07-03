@@ -2,6 +2,12 @@ server:
   port: 8084
 
 spring:
+    rabbitmq:
+        host: localhost
+        password: admin
+        port: 5672
+        username: admin
+        virtual-host: vhost1
   application:
     name: notifier
   jpa:
@@ -30,4 +36,3 @@ management:
         include: "*"
     health:
       show-details: always
-
