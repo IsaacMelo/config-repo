@@ -11,7 +11,8 @@ spring:
   application:
     name: notifier
   jpa:
-    show-sql: false
+    generate-ddl: true
+    show-sql: true
     hibernate:
       ddl-auto: update
     properties:
